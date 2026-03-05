@@ -10,14 +10,14 @@ spec:
       - host: 
         http:
           paths:
-              - path: / #/ will be the path to access the nginx application
+              - path: /  #/backend #/ will be the path to access the nginx application
                 pathType: Prefix  #
                 backend:
                     service:
                       name: beci
                       port:
                         number: 8080   
-              - path: /frontend
+              - path: /frontend #/
                 pathType: Prefix #/tomcat will be the path to access the tomcat application
                 backend:
                     service:
